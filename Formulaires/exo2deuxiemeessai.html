@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+<fieldset>
+<legend>Formulaire</legend>
+<input
+    type="text"
+    name="nom"
+    id="nom"
+    placeholder="Nom"
+    minlength="2"
+    maxlength="45"
+    pattern="^[A-Z]$">
+<br>
+<br>
+<input 
+    type="text"
+    name="prénom"
+    id="prénom"
+    placeholder="Prenom"
+    minlength="2"
+    maxlength="45"
+    pattern="^[A-Z]$">
+<br><br>
+
+<input 
+    type="email"
+    name="email"
+    id="email"
+    placeholder="Email"/>
+<br><br>
+
+<input type="radio" name="sexe" value="Mme"checked="checked" /> Madame
+<input type="radio" name="sexe" value="M"  /> Monsieur
+
+<br><br>
+
+<form action="" enctype="multipart/form-data" method="POST">
+    <input type="file" name="mon_fichier">
+  </form> 
+
+  <form method="post" action="traitement.php">
+    <p>
+        <label for="pays">Pays</label><br />
+        <select name="pays" id="pays">
+            <option value="france">France</option>
+            <option value="espagne">Espagne</option>
+            <option value="italie">Italie</option>
+            <option value="royaume-uni">Royaume-Uni</option>
+            <option value="canada">Canada</option>
+            <option value="etats-unis">États-Unis</option>
+            <option value="chine">Chine</option>
+            <option value="japon">Japon</option>
+        </select>
+    </p>
+
+    <form method="post" action="traitement.php">
+        <p>
+            Vos langues préférées :<br />
+            <input type="checkbox" name="français " id="français" /> <label for="français">Français</label><br />
+            <input type="checkbox" name="anglais" id="anglais" /> <label for="anglais">Anglais</label><br />
+        </p>
+     </form>
+
+     <form method="post" action="traitement.php">
+        <p>
+            Veuillez indiquer votre domaine d'activité :<br />
+            <input type="radio" name="Plombier" value="Plombier" id="Plombier" /> <label for="Plombier">Plombier</label><br />
+            <input type="radio" name="Electricité" value="Electricité" id="Electricité" /> <label for="Electricité">Electricité</label><br />
+        
+        </p>
+     </form>
+
+ </form>
+
+</fieldset>
+
+    </form>
+</body>
+</html>

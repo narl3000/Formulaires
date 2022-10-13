@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>  <body>
+    <form action="">
+      <fieldset>
+        <legend>Client</legend>        <input
+          type="text"
+          name="TT"
+          id="tott"
+          pattern="^([A-Z]+)\s([A-Z]){1}([a-z]+)$"
+        />
+        <input type="text" pattern="^[0-9]{5}$" />
+        <input type="submit" value="Go" />
+        <label for="Pays">Pays :</label>
+        <input id="Pays" type="text" name="" value="France" readonly />
+      </fieldset>
+    </form>    <form action="">
+      <fieldset>
+        <legend>Client</legend>
+        <input
+          type="text"
+          name="nom"
+          id="nom"
+          placeholder="nom"
+          pattern="^[A-Z]{1,}$"
+        />
+        <input
+          type="text"
+          name="prenom"
+          id="prenom"
+          pattern="^[A-Z]{1}[a-z]+$"
+        />
+        <input type="text" name="cp" id="cp" pattern="^[0-9]{5}$" />
+        <input
+          type="number"
+          name="num"
+          id="num"
+          placeholder="1"
+          max="165"
+          min="1"
+          step="3"
+        />
+      </fieldset>
+    </form>
+  </body>
+</html>

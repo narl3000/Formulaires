@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+        <fieldset>
+        <legend>Formulaire</legend>
+
+<h3>Contactez nous</h3>
+
+
+<label for="sex">Sexe :</label> <input type="radio" name="sexe" value="Femme"checked="checked" /> Femme
+<input type="radio" name="sexe" value="Homme"  /> Homme
+
+<br><br>
+<label for="Nom">Nom :</label>
+<input
+    type="text"
+    name="nom"
+    id="nom"
+    minlength="2"
+    maxlength="45"
+    pattern="^[A-Z]$">
+<label for="Prénom">Prénom :</label>
+<input 
+    type="text"
+    name="prénom"
+    id="prénom"
+    minlength="2"
+    maxlength="45"
+    pattern="^[A-Z]$">
+
+<br><br>
+<label for="Pseudo">Pseudo</label>
+<input 
+    type="Pseudo"
+    name="Pseudo"
+    id="Pseudo"
+    minlength="2"
+    maxlength="45">
+
+<br><br>
+<label for="Age">Age</label>
+<input 
+    type="number"
+    min="18">
+
+<br><br>
+<label for="Mot de passe">Mot de passe</label>
+<input 
+    type="text"
+    name="mot de passe"
+    id="mot de passe"
+    minlength="8">
+
+<br><br>
+<form method="post" action="traitement.php">
+    <p>
+        <label for="Commentaire">
+            Commentaire:
+        </label>
+<br>
+<textarea name="ameliorer" id="ameliorer" rows="10" cols="50">
+    </textarea>   
+    </p>
+
+    <label for="pays">Pays</label>
+    <select name="pays" id="pays">
+        <option value="france">France</option>
+        <option value="espagne">Espagne</option>
+
+<br><br>
+
+<label for="contact"></label>Souhaitez vous être contacté par mail:>
+<br><br>
+<input type="radio" name="contact" value="Oui"checked="checked" /> Oui
+<input type="radio" name="contact" value="Non"  /> Non
+
+<br><br>
+<label for="contact">Si oui, email :</label> 
+<input 
+    type="email"
+    name="email"
+    id="email"
+    placeholder="Email"/>
+ <br><br>
+ 
+ <input type="submit" value="Valider">
+    
+</body>
+</html>
